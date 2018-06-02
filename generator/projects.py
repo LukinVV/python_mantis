@@ -36,7 +36,7 @@ view_statuses = ["public", "private"]
 
 
 testdata = [
-    Project(name=random_string("name", 10), status=random.choice(statuses),
+    Project(name=random_string("name", 10), status=random.choice(statuses), enabled = random.choice(checkbox_values),
             inherit_gl_categories=random.choice(checkbox_values), view_status=random.choice(view_statuses),
             description=random_string("description", 30))
     for i in range(n)

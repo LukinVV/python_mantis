@@ -1,32 +1,32 @@
 [
   {
     "py/object": "model.project.Project",
-    "description": "descriptions21duEFre",
-    "enabled": null,
+    "description": "description7",
+    "enabled": "no",
     "id": null,
-    "inherit_gl_categories": "no",
-    "name": "name8EwW",
-    "status": "stable",
+    "inherit_gl_categories": "yes",
+    "name": "nameH",
+    "status": "obsolete",
     "view_status": "public"
   },
   {
     "py/object": "model.project.Project",
-    "description": "descriptionjkRZT2aMb25CXwesFLtYaZXk",
-    "enabled": null,
+    "description": "descriptionkZ4z",
+    "enabled": "no",
     "id": null,
     "inherit_gl_categories": "no",
-    "name": "namew5D",
-    "status": "release",
-    "view_status": "private"
+    "name": "name88HdfrY0",
+    "status": "obsolete",
+    "view_status": "public"
   },
   {
     "py/object": "model.project.Project",
-    "description": "descriptionN5G2drjvFT",
-    "enabled": null,
+    "description": "descriptioncWT0OoROV2fzO9R",
+    "enabled": "yes",
     "id": null,
-    "inherit_gl_categories": "no",
-    "name": "nameojJpjtr",
-    "status": "obsolete",
+    "inherit_gl_categories": "yes",
+    "name": "nameRTtSISmc",
+    "status": "development",
     "view_status": "private"
   }
 ]
