@@ -1,0 +1,32 @@
+[
+  {
+    "py/object": "model.project.Project",
+    "description": "descriptions21duEFre",
+    "enabled": null,
+    "id": null,
+    "inherit_gl_categories": "no",
+    "name": "name8EwW",
+    "status": "stable",
+    "view_status": "public"
+  },
+  {
+    "py/object": "model.project.Project",
+    "description": "descriptionjkRZT2aMb25CXwesFLtYaZXk",
+    "enabled": null,
+    "id": null,
+    "inherit_gl_categories": "no",
+    "name": "namew5D",
+    "status": "release",
+    "view_status": "private"
+  },
+  {
+    "py/object": "model.project.Project",
+    "description": "descriptionN5G2drjvFT",
+    "enabled": null,
+    "id": null,
+    "inherit_gl_categories": "no",
+    "name": "nameojJpjtr",
+    "status": "obsolete",
+    "view_status": "private"
+  }
+]
