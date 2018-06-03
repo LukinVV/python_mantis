@@ -7,12 +7,14 @@ def random_username(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-def test_signup_new_account(app):
+def test_signup_new_account(app, check_ui):
     username = random_username("user_", 10)
     email = username + "@localhost"
     password = "test"
     app.james.ensure_user_exists(username, password)
     app.signup.new_user(username=username, email=email, password=password)
     app.session.login(username, password)
-    assert app.session.is_logged_in_as(username)
-    app.session.logout()
+    app.soap.can_login(username, password)
+    if check_ui:
+        print("Проверка пользовательского интерфейса")
+        assert app.session.is_logged_in_as(username)
