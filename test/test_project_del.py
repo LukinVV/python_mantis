@@ -3,14 +3,17 @@ from model.project import Project
 
 
 def test_project_delete(app, orm, check_ui):
-    if len(orm.get_project_list()) == 0:
+    if len(app.soap.get_project_list(username=app.config['webadmin']['user_name'],
+                                     password=app.config['webadmin']['password'])) == 0:
         project = Project(name="new")
         app.project.add_project(project)
-    old_project_list = orm.get_project_list()
+    old_project_list = app.soap.get_project_list(username=app.config['webadmin']['user_name'],
+                                                 password=app.config['webadmin']['password'])
     # print("страрый список %s" %len(old_project_list))
     project = random.choice(old_project_list)
     app.project.delete_project_by_id(project.id)
-    new_project_list = orm.get_project_list()
+    new_project_list = app.soap.get_project_list(username=app.config['webadmin']['user_name'],
+                                                 password=app.config['webadmin']['password'])
     # print("новый список %s" %len(new_project_list))
     # assert len(new_project_list) == len(old_project_list) - 1
     old_project_list.remove(project)

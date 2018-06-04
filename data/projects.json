@@ -1,32 +1,32 @@
 [
   {
     "py/object": "model.project.Project",
-    "description": "description7",
-    "enabled": "no",
-    "id": null,
-    "inherit_gl_categories": "yes",
-    "name": "nameH",
-    "status": "obsolete",
-    "view_status": "public"
-  },
-  {
-    "py/object": "model.project.Project",
-    "description": "descriptionkZ4z",
-    "enabled": "no",
-    "id": null,
-    "inherit_gl_categories": "no",
-    "name": "name88HdfrY0",
-    "status": "obsolete",
-    "view_status": "public"
-  },
-  {
-    "py/object": "model.project.Project",
-    "description": "descriptioncWT0OoROV2fzO9R",
+    "description": "descriptionpZv91Vb",
     "enabled": "yes",
     "id": null,
     "inherit_gl_categories": "yes",
-    "name": "nameRTtSISmc",
+    "name": "nameTglUVeqT",
     "status": "development",
     "view_status": "private"
+  },
+  {
+    "py/object": "model.project.Project",
+    "description": "descriptionZKEolDrz7zcvaSsOwrk",
+    "enabled": "yes",
+    "id": null,
+    "inherit_gl_categories": "no",
+    "name": "nameWviMq0",
+    "status": "development",
+    "view_status": "private"
+  },
+  {
+    "py/object": "model.project.Project",
+    "description": "descriptionS",
+    "enabled": "yes",
+    "id": null,
+    "inherit_gl_categories": "no",
+    "name": "nameIq",
+    "status": "stable",
+    "view_status": "public"
   }
 ]

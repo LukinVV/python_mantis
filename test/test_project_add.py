@@ -3,10 +3,12 @@ import string
 import random
 
 def test_add_project(app, json_projects, orm, check_ui):
-    old_project_list = orm.get_project_list()
+    old_project_list = app.soap.get_project_list(username=app.config['webadmin']['user_name'],
+                                                  password=app.config['webadmin']['password'])
     project = json_projects
     app.project.add_project(project)
-    new_project_list = orm.get_project_list()
+    new_project_list = app.soap.get_project_list(username=app.config['webadmin']['user_name'],
+                                                  password=app.config['webadmin']['password'])
     # assert len(new_project_list) == len(old_project_list) + 1
     old_project_list.append(project)
     assert sorted(old_project_list, key=Project.id_or_max) == sorted(new_project_list, key=Project.id_or_max)
