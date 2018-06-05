@@ -1,31 +1,31 @@
 [
   {
     "py/object": "model.project.Project",
-    "description": "descriptionpZv91Vb",
-    "enabled": "yes",
+    "description": "descriptionPn7VZIxaa3oLJXJcNajCdHH",
+    "enabled": "no",
+    "id": null,
+    "inherit_gl_categories": "no",
+    "name": "name48",
+    "status": "release",
+    "view_status": "public"
+  },
+  {
+    "py/object": "model.project.Project",
+    "description": "description4VduRPtdh",
+    "enabled": "no",
     "id": null,
     "inherit_gl_categories": "yes",
-    "name": "nameTglUVeqT",
-    "status": "development",
-    "view_status": "private"
+    "name": "nameROoMUWYo6",
+    "status": "release",
+    "view_status": "public"
   },
   {
     "py/object": "model.project.Project",
-    "description": "descriptionZKEolDrz7zcvaSsOwrk",
-    "enabled": "yes",
+    "description": "descriptionwaP0F",
+    "enabled": "no",
     "id": null,
-    "inherit_gl_categories": "no",
-    "name": "nameWviMq0",
-    "status": "development",
-    "view_status": "private"
-  },
-  {
-    "py/object": "model.project.Project",
-    "description": "descriptionS",
-    "enabled": "yes",
-    "id": null,
-    "inherit_gl_categories": "no",
-    "name": "nameIq",
+    "inherit_gl_categories": "yes",
+    "name": "nameI9GpXD",
     "status": "stable",
     "view_status": "public"
   }

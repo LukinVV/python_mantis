@@ -1,0 +1,5 @@
+в файле  c:\xampp\php\php.ini
+поменять строчку
+;extension=php_soap.dll
+на
+extension=php_soap.dll

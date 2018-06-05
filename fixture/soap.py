@@ -18,10 +18,13 @@ class SoapHelper:
 
     def get_project_list(self, username, password):
         client = Client(self.app.config['soap']['url'])
-        self.projects_list = []
-        for element in client.service.mc_projects_get_user_accessible(username, password):
-            id = element.id
-            name = element.name
-            self.projects_list.append(Project(id=str(id), name=name))
-        return self.projects_list
-
+        try:
+            projects = client.service.mc_projects_get_user_accessible(username, password)
+            self.projects_list = []
+            for element in projects:
+                id = element.id
+                name = element.name
+                self.projects_list.append(Project(id=str(id), name=name))
+            return self.projects_list
+        except WebFault:
+            return False
